@@ -1,0 +1,55 @@
+{
+  "name": "@nxgate/sdk",
+  "version": "1.0.0",
+  "description": "SDK oficial da NXGATE para integração PIX - Node.js/TypeScript",
+  "author": "NXGATE",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "keywords": [
+    "nxgate",
+    "pix",
+    "payment",
+    "qrcode",
+    "sdk",
+    "brazil",
+    "cash-in",
+    "cash-out"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxgate/sdk-nodejs.git"
+  }
+}
