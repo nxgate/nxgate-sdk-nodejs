@@ -50,6 +50,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nxgate/sdk-nodejs.git"
+    "url": "https://github.com/nxgate/nxgate-sdk-nodejs.git"
   }
 }
